@@ -1,0 +1,18 @@
+<div class="container">
+
+  <form (ngSubmit)="processForm(user)">
+    <div class="form group">
+      <label for="name">Name</label>
+      <input type="text" name="name" class="form-control" [(ngModel)]="user.name">
+    </div>
+    <div class="form group">
+        <label for="age">Age</label>
+        <input type="text" name="age" class="form-control" [(ngModel)]="user.age">
+    </div>
+    <div class="form group">
+        <label for="gender">Gender</label>
+        <input type="text" name="gender" class="form-control" [(ngModel)]="user.gender">
+    </div>
+    <input type="submit" value="save" class="btn btn-success">
+  </form>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+
+    <form (ngSubmit)="processSongForm(song)">
+      <div class="form group">
+        <label for="song">Song</label>
+        <input type="text" name="song" class="form-control" [(ngModel)]="song.song">
+      </div>
+      <div class="form group">
+          <label for="singers">Singers</label>
+          <input type="text" name="singers" class="form-control" [(ngModel)]="song.singers">
+      </div>
+      <div class="form group">
+          <label for="movie">Movie</label>
+          <input type="text" name="movie" class="form-control" [(ngModel)]="song.movie">
+      </div>
+      <div class="form group">
+          <label for="composer">Composer</label>
+          <input type="text" name="composer" class="form-control" [(ngModel)]="song.composer">
+      </div>
+      <div class="form group">
+          <label for="lyricist">Lyricist</label>
+          <input type="text" name="lyricist" class="form-control" [(ngModel)]="song.lyricist">
+      </div>
+      <input type="submit" value="save" class="btn btn-success">
+    </form>
+  </div>

@@ -1,0 +1,28 @@
+<div class="container">
+
+    <table class="table table-striped">
+      <thead>
+        <th>Id</th>
+        <th>Song</th>
+        <th>Singers</th>
+        <th>Movie</th>
+        <th>Composer</th>
+        <th>Lyricist</th>
+        <th>Operations</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let song of songs">
+          <td>{{song.id}}</td>
+          <td>{{song.song}}</td>
+          <td>{{song.singers}}</td>
+          <td>{{song.movie}}</td>
+          <td>{{song.composer}}</td>
+          <td>{{song.lyricist}}</td>
+          <td><button class="btn btn-danger" (click)="deleteSong(song)">Delete</button>
+          <button class="btn btn-primary" (click)="updateSong(song)">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+      <button class="btn btn-primary" (click)="newSong()">New Song</button>
+      <button style="margin-left:2%" class="btn btn-success" (click)="navigateHome()">Home</button>
+    </div>
